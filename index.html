@@ -3,100 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenguajes de Programación</title>
+    <link rel="stylesheet" href="iconos/fontawesome-free-7.1.0-web/css/all.css">
+    <title>Tabla con estilo</title>
     <style>
-        h1{text-align: center;}
-        #A{font-size: 85%;}
-        table, th, td{border: 3px solid;
-                    border-collapse: collapse;}
-        th, td{padding: 10px;}
-        td{background-color: rgb(211, 221, 224);}
-        table{margin: auto;}
+        table{text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 50px;}
+
+        table th, 
+        table td{border: 3px solid black;
+                width: 100px;
+                padding: 5px 10px;}
+        
+        th,
+        td:first-child{background-color: lightgreen; 
+                    font-weight: 600; 
+                    width: 100px; 
+                    color: white;}
+
+        table td i{font-size: 20px;
+                margin-right: 5px;
+                cursor: pointer;}
+        
+        table td i:nth-child(1){color: rgb(42, 194, 49);}
+
+        
+        table td i:nth-child(2){color: #1BD35F;}
+
+        
+        table td i:nth-child(3){color: hsl(160, 96%, 36%);}
+
+        table tr:nth-child(odd){background-color: rgba(0, 0, 0, 0.2);}
+
+        table tr:hover{background-color: rgba(0, 0, 0, 0.1);}
+
+        table td i:hover{opacity: 0.7;}
+
     </style>
 </head>
 <body>
-    
-    <h1>Herramientas para el Desarrollo de Software</h1>
-    <p>Los <strong>lenguajes de programación</strong> son programas destinados a la construcción de otros programas informáticos, dicho lenguaje está compuesto por <strong>símbolos y reglas sintácticas y semánticas</strong>, expresadas en forma de instrucciones y relaciones lógicas, mediante las cuales se construye el <mark>código fuente de una aplicación o pieza de software determinado</mark>.</p>
-
-    <table style="text-align: center;">
-
+    <table>
         <thead>
             <tr>
-                <th><img src="../Lenguajes-de-programacion/img/JavaS.jpg" alt="" height="150px" width="200px"></th>
-                <th><img src="../Lenguajes-de-programacion/img/CC3.webp" alt="" height="150px" width="125"></th>
-                <th><img src="../Lenguajes-de-programacion/img/javascript-logo.svg" alt="" height="150px" width="150px"></th>
-                <th><img src="../Lenguajes-de-programacion/img/pythoned.png" alt="" height="175px" width="200px"></th>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nombre(s)
+                </th>
+                <th>
+                    Apellidos
+                </th>
+                <th>
+                    Correo Electrónico
+                </th>
+                <th>
+                    Opciones
+                </th>
             </tr>
-            
         </thead>
-
         <tbody>
-                <td id="A"><mark>HTML</mark> son las siglas de <mark>Hiper Text Markup Language</mark>,
-                <br>un lenguaje de marcado que permite <u>estrucutrar
-                <br>y organizar nuestro texto</u> de manera legible.
-                </td>
-                <td id="A"><mark>CSS</mark> son las siglas de <mark>Cascading Style Sheets</mark>,
-                <br>lenguaje diseñado para <u>definir y mejorar
-                <br>la presentación visual</u> de documentos HTML.
-                </td>
-                <td id="A"><mark>JavaScript</mark> es un lenguaje que permite agregar
-                <br>muchas funcionalidades a las páginas web haciéndolas
-                <br><u>más interactivas, útiles y atractivas</u> para el usuario.
-                </td>
-                <td id="A"><mark>Python</mark> es un lenguaje de programación informático
-                <br>que se utiliza a menudo para crear <u>sitios web y software,
-                <br>automatizar tareas y realizar análisis de datos</u>.
-                </td>
-
-        </tbody>
-
-        <tbody>
-                <td><a href="https://lenguajehtml.com/html/" target="_blank">Presiona aquí para mayor información</a></td>
-                <td><a href="https://www.byronvargas.com/web/que-es-el-lenguaje-css3/" target="_blank">Presiona aquí para mayor información</a></td>
-                <td><a href="https://ebac.mx/blog/que-es-javascript" target="_blank">Presiona aquí para mayor información</a></td>
-                <td><a href="https://www.coursera.org/mx/articles/what-is-python-used-for-a-beginners-guide-to-using-python" target="_blank">Presiona aquí para mayor información</a></td>
-        </tbody>
-
-        <thead>
             <tr>
-                <th><img src="../Lenguajes-de-programacion/img/JAVA.jpg" alt="" height="175px" width="175px"></th>
-                <th><img src="../Lenguajes-de-programacion/img/CCC.jpg" alt="" height="150px" width="150px"></th>
-                <th><img src="../Lenguajes-de-programacion/img/CC.jpg" alt="" height="200px" width="250px"></th>
-                <th><img src="../Lenguajes-de-programacion/img/OIP.jfif" alt="" height="150px" width="150px"></th>
+                <td>
+                    123
+                </td>
+                <td>
+                    Kenai
+                </td>
+                <td>
+                    Alférez López
+                </td>
+                <td>
+                    kenaialferez2008@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
             </tr>
-        </thead>
-
-        <tbody>
-                <td id="A"><mark>Java</mark> es un lenguaje de programación,
-                <br>orientado a objetos y diseñado
-                <br>para ser lo más <u>independiente posible
-                <br>del hardware y del sistema operativo</u> donde se ejecuta.
+            <tr>
+                <td>
+                    456
                 </td>
-                <td id="A"><mark>C#</mark> es un lenguaje de programación,
-                <br>orientado a objetos y de código abierto,
-                <br>es utilizado para <u>crear aplicaciones en la plataforma .NET</u>.
+                <td>
+                    Luciana
                 </td>
-                <td id="A"><mark>C++</mark> es un lenguaje de programación,
-                <br>orientado a objetos usado para realizar,
-                <br><u>sistemas operativos, videojuegos y aplicaciones web</u>.
+                <td>
+                    Delgado Alanis
                 </td>
-                <td id="A"><mark>Swift</mark> es el lenguaje de programación
-                <br>creado por Apple cuyo objetivo es <u>revolucionar
-                <br>el desarrollo de aplicaciones para sus plataformas</u>.
+                <td>
+                    thelmadelgado0807@gmail.com
                 </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            <tr>
+                <td>
+                    789
+                </td>
+                <td>
+                    Santiago
+                </td>
+                <td>
+                    Hernández Moya
+                </td>
+                <td>
+                    santiago.m08@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+           <tr>
+                <td>
+                    123
+                </td>
+                <td>
+                    Carlos
+                </td>
+                <td>
+                    Alvarado soto
+                </td>
+                <td>
+                    alvarito.s04@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    456
+                </td>
+                <td>
+                    Abel
+                </td>
+                <td>
+                    Palacios Luna
+                </td>
+                <td>
+                    lunap.l0704@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            </tr>
         </tbody>
-
-        <tbody>
-                <td><a href="https://imaginaformacion.com/tutoriales/que-es-java" target="_blank">Presiona aquí para mayor información</a></td>
-                <td><a href="https://dotnet.microsoft.com/es-es/languages/csharp" target="_blank">Presiona aquí para mayor información</a></td>
-                <td><a href="https://openwebinars.net/blog/que-es-cpp/" target="_blank">Presiona aquí para mayor información</a></td>
-                <td><a href="https://www.ebiseducation.com/swift-que-es-para-que-sirve-y-caracteristicas" target="_blank">Presiona aquí para mayor información</a></td>
-        </tbody>
-
     </table>
-
-    <p style="text-align: center;"><strong>Firma:</strong> Adolfo Nava</p>
-
 </body>
 </html>
